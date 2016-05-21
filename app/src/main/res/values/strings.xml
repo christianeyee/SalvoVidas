@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SalvoVidas</string>
+
+    <string name="chikka_url">https://post.chikka.com/smsapi/request</string>
+    <string name="shortcode">29290710473</string>
+    <string name="chikka_id">f0423578d55e2c783732a3f1ff58145f60c90ddf2c480a7a26dad359eff3add4</string>
+    <string name="chikka_key">8b1b79484bb9c1f3b7a1fab1160604289e32eb7ce328db20ed3766f013643401</string>
+    <string name="mobile">639258941105</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

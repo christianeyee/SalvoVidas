@@ -1,9 +1,9 @@
 package com.salvovidas.salvovidas.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.salvovidas.salvovidas.R;
+import com.salvovidas.salvovidas.services.SmsService;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -20,7 +21,7 @@ import java.util.TimerTask;
 public class RouteFragment extends Fragment {
     private static final int TIME = 30000;
     private static final int INTERVAL = 5000;
-    private int count = 5;
+    private int count = 3;
 
     private CountDownTimer timer;
 
@@ -71,8 +72,7 @@ public class RouteFragment extends Fragment {
     class MyTimerTask extends TimerTask {
         public void run() {
             if (count > 0) {
-                Log.i("timertask", "executed");
-                // getActivity().startService(new Intent(getActivity(),SmsService.class));
+                getActivity().startService(new Intent(getActivity(),SmsService.class));
                 count--;
             }
         }
